@@ -1,0 +1,92 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background-color: #ddd;
+}
+.container {
+     background-color: #fff;
+     /* min-width: 655px; */
+}
+.tab__list {
+     display: flex;
+     align-items: center;
+     padding: 5px;
+     list-style: none;
+
+     position: relative;
+}
+.tab__list a {
+     display: inline-block;
+     /* padding: 12px 14px; */
+     text-decoration: none;
+     font-size: 14px;
+     color: #666;
+}
+label {
+     display: inline-block;
+     padding: 12px 14px;
+     border: 1px solid #ddd;
+     transition: 0.2s linear;
+     cursor: pointer;
+}
+.tab__list .tab__list--item:not(:first-child) label {
+     border-left: 0;
+}
+.tab__list label:hover {
+     color: #fff;
+     background-color: #05a8f5;
+}
+
+.tab__content {
+     position: absolute;
+     bottom: -180px;
+     left: 0;
+     right: 0;
+     padding: 20px;
+     background-color: #fff;
+     overflow-x: scroll;
+     height: 180px;
+}
+.tab__title {
+     color: #333;
+     font-size: 26px;
+}
+.tab__desc {
+     color: #666;
+     font-size: 14px;
+     white-space: nowrap;
+}
+.tab__content--1,
+.tab__content--2,
+.tab__content--3,
+.tab__content--4 {
+     display: none;
+}
+.input-1:checked ~ .tab__content .tab__content--1,
+.input-2:checked ~ .tab__content .tab__content--2,
+.input-3:checked ~ .tab__content .tab__content--3,
+.input-4:checked ~ .tab__content .tab__content--4 {
+     display: block;
+}
+.input-1:checked ~ .tab__content,
+.input-2:checked ~ .tab__content,
+.input-3:checked ~ .tab__content,
+.input-4:checked ~ .tab__content {
+     animation: shake .25s linear;
+}
+@keyframes shake {
+     0% {
+          transform: translateZ(-100px);
+     }
+     100% {
+          transform: translateZ(0px);
+     }
+}
