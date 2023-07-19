@@ -27,11 +27,17 @@
           <header class="header">
                <div class="container">
                     <nav class="nav">
-                         <div class="header__logo">
-                              <img src="./assets/images/logo.svg" alt="Grover" />
+                         <div class="header__top">
+                              <div class="header__logo">
+                                   <img src="./assets/images/logo.svg" alt="Grover" />
+                              </div>
+                              <label for="menu" class="menu"
+                                   ><i class="fa-solid fa-bars"></i
+                              ></label>
                          </div>
-                         <!-- <i class="fa-solid fa-bars"></i> -->
-                         <!-- <div class="header__wrapper"> -->
+                         <input type="checkbox" id="menu" class="open-menu" hidden />
+
+                         <div class="header__wrapper">
                               <ul class="header__list">
                                    <li class="header__list--item">
                                         <a href="#!" class="header__link active">Home</a>
@@ -48,7 +54,12 @@
                               </ul>
                               <form class="search">
                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                   <input type="text" class="input__search" placeholder="Search" />
+                                   <div class="input__form">
+                                        <input
+                                             type="text"
+                                             class="input__search"
+                                             placeholder="Search" />
+                                   </div>
                                    <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="24"
@@ -68,7 +79,7 @@
                                              d="M18.5 10.5l-4.911-6.422a2 2 0 00-3.178 0L5.5 10.5" />
                                    </svg>
                               </form>
-                         <!-- </div> -->
+                         </div>
                     </nav>
 
                     <div class="header__content">
@@ -120,50 +131,58 @@
                               <div class="service__list">
                                    <!-- Item-1 -->
                                    <div class="service__list--item">
-                                        <div class="service__inner">
-                                             <div class="service__content--wrap">
-                                                  <div class="service__thumb">
-                                                       <img
-                                                            src="./assets/images/service-ic1.svg"
-                                                            alt="Free shipping"
-                                                            class="service__img" />
-                                                  </div>
-                                                  <h3 class="service__content--title">
-                                                       Free shipping
-                                                  </h3>
-                                                  <p class="service__content--desc">
-                                                       Enjoy Order in a hand using the fresness of
-                                                       groceries
-                                                  </p>
+                                        <div class="service__inner--bg"></div>
+                                        <div class="service__content--wrap">
+                                             <div class="service__thumb">
+                                                  <img
+                                                       src="./assets/images/service-ic1.svg"
+                                                       alt="Free shipping"
+                                                       class="service__img" />
                                              </div>
+                                             <h3 class="service__content--title">Free shipping</h3>
+                                             <p class="service__content--desc">
+                                                  Enjoy Order in a hand using the fresness of
+                                                  groceries
+                                             </p>
                                         </div>
                                    </div>
                                    <!-- Item-2 -->
                                    <div class="service__list--item">
-                                        <div class="service__thumb">
-                                             <img
-                                                  src="./assets/images/service-ic2.svg"
-                                                  alt="15 days returns"
-                                                  class="service__img" />
+                                        <div class="service__inner--bg"></div>
+                                        <div class="service__content--wrap">
+                                             <div class="service__thumb">
+                                                  <img
+                                                       src="./assets/images/service-ic2.svg"
+                                                       alt="15 days returns"
+                                                       class="service__img" />
+                                             </div>
+                                             <h3 class="service__content--title">
+                                                  15 days returns
+                                             </h3>
+                                             <p class="service__content--desc">
+                                                  Order in a handy way using the freshness of the
+                                                  groceries.
+                                             </p>
                                         </div>
-                                        <h3 class="service__content--title">15 days returns</h3>
-                                        <p class="service__content--desc">
-                                             Order in a handy way using the freshness of the
-                                             groceries.
-                                        </p>
                                    </div>
                                    <!-- Item-3 -->
                                    <div class="service__list--item">
-                                        <div class="service__thumb">
-                                             <img
-                                                  src="./assets/images/service-ic3.svg"
-                                                  alt="Secure checkout"
-                                                  class="service__img" />
+                                        <div class="service__inner--bg"></div>
+                                        <div class="service__content--wrap">
+                                             <div class="service__thumb">
+                                                  <img
+                                                       src="./assets/images/service-ic3.svg"
+                                                       alt="Secure checkout"
+                                                       class="service__img" />
+                                             </div>
+                                             <h3 class="service__content--title">
+                                                  Secure checkout
+                                             </h3>
+                                             <p class="service__content--desc">
+                                                  If you get rotten items - return immediately to
+                                                  us.
+                                             </p>
                                         </div>
-                                        <h3 class="service__content--title">Secure checkout</h3>
-                                        <p class="service__content--desc">
-                                             If you get rotten items - return immediately to us.
-                                        </p>
                                    </div>
                               </div>
                          </div>
