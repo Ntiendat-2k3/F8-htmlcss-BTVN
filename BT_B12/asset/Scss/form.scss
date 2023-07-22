@@ -1,0 +1,101 @@
+.mt-44 {
+     margin-top: 28px;
+}
+.form {
+     @include centerContainer($direction: column);
+     &-title {
+          @include text($font-size: 2.6rem);
+          margin-bottom: 60px;
+     }
+     &-input {
+          width: 100%;
+          position: relative;
+          label {
+               // position: absolute;
+               // left: 18px;
+               // top: 50%;
+               // transform: translateY(-50%);
+               @include centerItem(50%, 18px, 0, -50%);
+               @include text(#adafca, 1.5rem, 600);
+               cursor: text;
+               transition: transform 0.15s linear;
+          }
+          input {
+               display: inline-block;
+               width: 100%;
+               padding: 19px 18px;
+               color: $textColor;
+               outline: none;
+               border: 1px solid #ddd;
+               border-radius: 9px;
+               @include text;
+               &:focus {
+                    border: 1px solid #615dfa;
+               }
+               &:focus ~ label,
+               &:valid ~ label {
+                    transform: translate(-8px, -34px);
+                    background-color: #fff;
+                    padding: 0 4px;
+                    font-size: 1.2rem;
+               }
+          }
+     }
+     &-row {
+          margin-top: 28px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &-checkbox {
+               @include centerContainer;
+               position: relative;
+               label {
+                    @include text($font-size: 1.4rem);
+                    padding-left: 32px;
+                    cursor: pointer;
+               }
+               .checked-box {
+                    position: absolute;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background-color: $secondaryColor;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    &-img {
+                         @include centerItem;
+                         display: block;
+                    }
+               }
+               input:checked ~ .checked-box {
+                    border: 1px solid #ddd;
+                    background-color: $primaryColor;
+               }
+               input:checked ~ .checked-box .checked-box-img {
+                    display: none;
+               }
+          }
+          &-link {
+               text-decoration: none;
+               @include text(#adafca, 1.4rem);
+               &:hover {
+                    color: $secondaryColor;
+               }
+          }
+     }
+     &-submit {
+          width: 100%;
+          margin-top: 28px;
+          padding: 18px 0;
+          @include text($primaryColor, 1.4rem);
+          background-color: #615dfa;
+          border-radius: 12px;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.15s linear;
+          &:hover {
+               background-color: #5753e4;
+          }
+     }
+}

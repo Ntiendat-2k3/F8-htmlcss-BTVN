@@ -1,0 +1,55 @@
+.landing {
+     background-image: url("../images/landing-background.jpg");
+     background-size: cover;
+     @include centerContainer;
+     min-height: 100vh;
+     &-info {
+          width: 584px;
+          @include centerContainer($direction: column);
+          &-logo {
+               width: 42px;
+               height: 60px;
+          }
+          &-img {
+               @include editImg;
+          }
+          &-pretitle {
+               margin-top: 50px;
+               @include text($primaryColor, 2.4rem, 500);
+               text-transform: uppercase;
+          }
+          &-title {
+               margin-top: -5px;
+               font-family: "Titillium Web", sans-serif;
+               @include text($primaryColor, 10.4rem, 900);
+               text-transform: uppercase;
+          }
+          &-desc {
+               width: 384px;
+               text-align: center;
+               margin-top: 40px;
+               @include text($primaryColor, 1.8rem, 500);
+               line-height: 1.33;
+          }
+     }
+     &-btn {
+          margin-top: 90px;
+          display: flex;
+          &-login,
+          &-register {
+               width: 180px;
+               padding: 18px 63px;
+               display: inline-block;
+               @include text($primaryColor, 1.6rem, 700);
+               border: 1px solid $primaryColor;
+               transition: 0.2s ease-out;
+          }
+          &-login {
+               border-radius: 12px 0 0 12px;
+          }
+          &-register {
+               border-left: 0;
+               border-radius: 0 12px 12px 0;
+          }
+     }
+}

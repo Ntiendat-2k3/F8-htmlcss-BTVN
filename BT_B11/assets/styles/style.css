@@ -28,9 +28,8 @@ img {
 /* Common */
 .container {
      width: 1296px;
-     max-width: 100%;
+     max-width: calc(100% - 120px);
      margin: 0 auto;
-     padding: 10px;
 }
 .btn {
      border: 1px solid var(--primary-color);
@@ -48,16 +47,23 @@ img {
 .nav {
      display: flex;
      align-items: center;
+     justify-content: space-between;
      padding: 8px 0;
 }
+.header__logo {
+     width: 255px;
+     flex: 1;
+}
 .header__wrapper {
-     margin-left: 344px;
+     max-width: 861px;
+     width: 100%;
      display: flex;
      align-items: center;
+     justify-content: space-between;
 }
 .header__list {
      display: flex;
-     gap: 3.2rem;
+     gap: 32px;
      list-style: none;
 }
 .header__link {
@@ -77,11 +83,9 @@ img {
      display: flex;
      position: relative;
      width: 28.8rem;
-     margin-left: 244px;
 }
 .input__form {
      width: 100%;
-
      position: relative;
 }
 .input__form::after {
@@ -243,13 +247,13 @@ img {
      text-align: center;
 }
 .service__list {
-     padding: 20px 142px;
+     max-width: 1000px;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 64px;
+     margin: 0 auto;
 }
 .service__list--item {
-     width: 303px;
      height: 328px;
      background-color: #fff;
      border-radius: 12px;

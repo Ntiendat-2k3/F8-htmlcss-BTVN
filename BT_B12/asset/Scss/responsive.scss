@@ -1,0 +1,17 @@
+@media screen and (max-width: 1400px) {
+     .landing {
+          flex-direction: column;
+          gap: 80px;
+          padding-bottom: 100px;
+          &-form {
+               margin: 0 auto;
+          }
+          &-form-rocket {
+               display: none;
+          }
+     }
+     .create-account {
+          border-radius: 12px;
+          padding-bottom: 64px;
+     }
+}

@@ -9,6 +9,8 @@
      }
      .nav {
           flex-direction: column;
+          width: 636px;
+          margin: 0 auto;
      }
      .header__top {
           display: flex;
@@ -23,7 +25,6 @@
      .header__link {
           text-align: center;
      }
-     .search,
      .header__wrapper {
           margin-left: 0;
      }
@@ -31,7 +32,7 @@
           margin-top: 12px;
      }
      .search {
-          margin-top: 20px;
+          margin: 20px auto auto auto; 
      }
      .header__list--item {
           text-align: center;
@@ -52,18 +53,6 @@
      .header__content {
           flex-direction: column;
      }
-     .header__title {
-          font-size: 3.8rem;
-          line-height: 5rem;
-     }
-     .header__desc {
-          width: 100%;
-          line-height: 1.8;
-     }
-     .header__btn,
-     .header__btn--process {
-          font-size: 1.6rem;
-     }
      .header__btn {
           width: 160px;
      }
@@ -72,10 +61,11 @@
           margin-top: 0;
      }
      .service__list {
-          padding: 0;
-          gap: 24px;
+          width: 720px;
+          gap: 0;
      }
      .service__list--item {
+          margin: 0 auto;
           width: 216px;
      }
      .service__content--title {
@@ -89,18 +79,13 @@
      .feature__content,
      .feature__content {
           margin-top: 100px;
-          width: 100%;
+          width: 696px;
      }
      .feature__title2,
      .feature__title,
      .feature__desc2,
      .feature__desc {
           width: 100%;
-     }
-     .feature__btn {
-          width: 180px;
-          padding: 16px 40px;
-          font-size: 1.6rem;
      }
      /* CTA */
      .row {
@@ -122,10 +107,6 @@
      .cta__wrap {
           margin-top: 61px;
      }
-     .cta__appstore--text,
-     .cta__playstore--text {
-          font-size: 1.6rem;
-     }
      /* Footer */
      .footer {
           margin-top: 100px;
@@ -140,23 +121,11 @@
      .footer__logo {
           margin: 0 auto;
      }
-     .footer__desc2,
-     .footer__desc {
-          font-size: 1.4rem;
-          margin-bottom: 20px;
-     }
      .footer__right {
           grid-template-columns: 1fr;
           margin: 0 auto;
           width: 100%;
           text-align: center;
-     }
-     .footer__column--title {
-          font-size: 1.6rem;
-          margin-bottom: 25px;
-     }
-     .footer__column--link {
-          font-size: 1.4rem;
      }
 }
 /* / Mobile */
@@ -191,10 +160,11 @@
      .service__list {
           width: 100%;
           grid-template-columns: 1fr;
+          gap: 30px;
      }
      .service__list--item {
-          width: 100%;
-          height: 263px;
+          width: 85%;
+          margin: 0 auto;
      }
      .feature2,
      .feature {
@@ -226,10 +196,44 @@
      }
 }
 
-/* / Tablet */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
+     :root {
+          --fz-18: 1.6rem;
+          --fz-title: 3.2rem;
+     }
+     .container {
+          width: 960px;
+     }
+     .header__title {
+          font-size: 3.8rem;
+          line-height: 5rem;
+     }
+     .header__btn,
+     .header__btn--process {
+          font-size: 1.6rem;
+     }
+     .feature__btn {
+          width: 180px;
+          padding: 16px 40px;
+          font-size: 1.6rem;
+     }
+     .cta__appstore--text,
+     .cta__playstore--text {
+          font-size: 1.6rem;
+     }
+     .footer__desc2,
+     .footer__desc {
+          font-size: 1.4rem;
+          margin-bottom: 20px;
+     }
+     .footer__column--title {
+          font-size: 1.6rem;
+          margin-bottom: 25px;
+     }
+     .footer__column--link {
+          font-size: 1.4rem;
+     }
 }
-
 /* / Destop */
 @media screen and (min-width: 992px) {
      .menu {

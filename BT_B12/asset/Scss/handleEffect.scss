@@ -1,0 +1,47 @@
+.login:checked ~ .landing-info .landing-btn-login {
+     background-color: $primaryColor;
+     color: $textColor;
+}
+.login:checked ~ .landing-info .landing-btn-register {
+     color: $primaryColor;
+     cursor: pointer;
+}
+.register:checked ~ .landing-info .landing-btn-login {
+     color: $primaryColor;
+     cursor: pointer;
+}
+.register:checked ~ .landing-info .landing-btn-register {
+     background-color: $primaryColor;
+     color: $textColor;
+}
+
+// .login:checked ~ .landing-form ,
+// .register:checked ~ .create-account  {
+//      display: block;
+// }
+// .login:checked ~ .create-account ,
+// .register:checked ~ .landing-form  {
+//      display: none;
+// }
+.login:checked ~ .landing-form {
+     display: block;
+     // transform: translateX(0);
+     // opacity: 1;
+     // visibility: visible;
+}
+.login:checked ~ .create-account {
+     display: none;
+     // opacity: 0;
+     // visibility: hidden;
+}
+.register:checked ~ .landing-form {
+     display: none;
+     // opacity: 0;
+     // visibility: hidden;
+}
+.register:checked ~ .create-account {
+     display: block;
+     // transform: translateX(0);
+     // opacity: 1;
+     // visibility: visible;
+}

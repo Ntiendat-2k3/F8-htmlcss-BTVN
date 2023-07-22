@@ -1,0 +1,28 @@
+.create-account {
+     margin-top: 8px;
+     padding-bottom: 0;
+     border-radius: 12px 12px 0 0;
+     // transform: translateX(100%);
+     // transition: transform .25s ease-in-out;
+     .landing-form-rocket {
+          transform: translate(-50%, -10%);
+     }
+     .form {
+          &-desc {
+               margin-top: 14px;
+               @include text($textColor, 1.4rem, 500);
+               line-height: 2;
+               a {
+                    font-weight: 700;
+                    color: $secondaryColor;
+                    text-decoration: none;
+               }
+          }
+          &-submit {
+               background-color: $secondaryColor;
+               &:hover {
+                    background-color: #1bc5d4;
+               }
+          }
+     }
+}

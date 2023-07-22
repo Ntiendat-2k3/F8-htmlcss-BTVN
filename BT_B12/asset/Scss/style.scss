@@ -1,0 +1,15 @@
+@import "./mixins";
+* {
+     box-sizing: border-box;
+     font-family: "Rajdhani", sans-serif;
+}
+html {
+     font-size: 62.5%;
+}
+@import "./variables";
+@import "./landing";
+@import "./landing-form";
+@import "./form";
+@import "./create-account";
+@import "./handleEffect";
+@import "./responsive";
