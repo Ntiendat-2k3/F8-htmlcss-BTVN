@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "./variables";
 
 @mixin centerContainer($justify-content: center, $align-items: center, $direction: row) {
@@ -20,6 +21,7 @@
           transform: translate($Ox, $Oy);
      }
 }
+// or https://sass-lang.com/documentation/interpolation/
 @mixin text($color: $textColor, $font-size: 1.6rem, $font-weight: 700) {
      color: $color;
      font-size: $font-size;

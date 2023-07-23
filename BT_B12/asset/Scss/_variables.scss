@@ -1,3 +1,10 @@
 $primaryColor: #fff;
 $secondaryColor: #23d2e2;
 $textColor: #3e3f5e;
+
+$theme-btns: (
+     "login": #615dfa,
+     "login-hover": #5753e4,
+     "register": $secondaryColor,
+     "register-hover": #1bc5d4,
+);

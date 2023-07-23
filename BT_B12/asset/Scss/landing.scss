@@ -3,6 +3,19 @@
      background-size: cover;
      @include centerContainer;
      min-height: 100vh;
+     position: relative;
+     overflow: hidden;
+     &::before {
+          content: "";
+          position: absolute;
+          width: 64%;
+          height: 140%;
+          border-radius: 50%;
+          background: url(../images/dot-texture.png) repeat 0 0 #fff;
+          top: -20%;
+          right: -32%;
+          pointer-events: none;
+     }
      &-info {
           width: 584px;
           @include centerContainer($direction: column);
@@ -19,15 +32,15 @@
                text-transform: uppercase;
           }
           &-title {
-               margin-top: -5px;
+               margin-top: -10px;
                font-family: "Titillium Web", sans-serif;
                @include text($primaryColor, 10.4rem, 900);
                text-transform: uppercase;
           }
           &-desc {
+               margin-top: 40px;
                width: 384px;
                text-align: center;
-               margin-top: 40px;
                @include text($primaryColor, 1.8rem, 500);
                line-height: 1.33;
           }

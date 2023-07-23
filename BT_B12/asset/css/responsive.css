@@ -4,11 +4,29 @@
     gap: 80px;
     padding-bottom: 100px;
   }
+  .landing-info {
+    margin-top: 80px;
+  }
+  .landing-info-desc {
+    display: none;
+  }
+  .landing-info-pretitle {
+    margin-top: 38px;
+  }
+  .landing-info-title {
+    margin-top: -12px;
+  }
   .landing-form {
     margin: 0 auto;
   }
   .landing-form-rocket {
     display: none;
+  }
+  .landing::before {
+    display: none;
+  }
+  .landing-btn {
+    margin-top: 50px;
   }
   .create-account {
     border-radius: 12px;

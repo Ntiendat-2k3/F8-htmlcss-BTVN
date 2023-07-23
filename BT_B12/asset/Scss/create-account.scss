@@ -1,3 +1,4 @@
+@use "sass:map";
 .create-account {
      margin-top: 8px;
      padding-bottom: 0;
@@ -19,9 +20,9 @@
                }
           }
           &-submit {
-               background-color: $secondaryColor;
+               background-color: map.get($theme-btns, "register");
                &:hover {
-                    background-color: #1bc5d4;
+                    background-color: map.get($theme-btns, "register-hover");
                }
           }
      }

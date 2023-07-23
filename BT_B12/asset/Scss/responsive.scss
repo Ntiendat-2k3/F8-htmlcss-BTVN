@@ -3,11 +3,29 @@
           flex-direction: column;
           gap: 80px;
           padding-bottom: 100px;
+          &-info {
+               margin-top: 80px;
+               &-desc {
+                    display: none;
+               }
+               &-pretitle {
+                    margin-top: 38px;
+               }
+               &-title {
+                    margin-top: -12px;
+               }
+          }
           &-form {
                margin: 0 auto;
           }
           &-form-rocket {
                display: none;
+          }
+          &::before {
+               display: none;
+          }
+          &-btn {
+               margin-top: 50px;
           }
      }
      .create-account {
