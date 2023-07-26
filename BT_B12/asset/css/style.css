@@ -353,7 +353,7 @@ html {
 .register:checked ~ .landing-wrapper .create-account {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-118%);
+  transform: translateX(-117%);
 }
 
 @media screen and (max-width: 1400px) {
