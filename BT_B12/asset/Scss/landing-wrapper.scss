@@ -1,0 +1,20 @@
+.landing-wrapper {
+     display: flex;
+     align-items: center;
+     gap: 80px;
+     margin-left: 70px;
+     width: 484px;
+     border-radius: 12px;
+     .landing-form {
+          width: 100%;
+          flex: 1 0 100%;
+          border-radius: 12px;
+          padding: 64px;
+     }
+     .login-form {
+          height: 674px;
+     }
+     .create-account {
+          height: 820px;
+     }
+}

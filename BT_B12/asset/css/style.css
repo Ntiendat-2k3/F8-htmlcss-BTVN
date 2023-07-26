@@ -8,12 +8,12 @@ html {
 }
 
 .landing {
-  background-image: url("../images/landing-background.jpg");
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  background-image: url("../images/landing-background.jpg");
+  background-size: cover;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -91,17 +91,35 @@ html {
   border-radius: 0 12px 12px 0;
 }
 
-.landing-form {
-  width: 484px;
+.landing-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 80px;
   margin-left: 70px;
-  background-color: #fff;
+  width: 484px;
+  border-radius: 12px;
+}
+.landing-wrapper .landing-form {
+  width: 100%;
+  flex: 1 0 100%;
+  border-radius: 12px;
   padding: 64px;
+}
+.landing-wrapper .login-form {
+  height: 674px;
+}
+.landing-wrapper .create-account {
+  height: 820px;
+}
+
+.landing-form {
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 12px;
   position: relative;
+  transition: 0.5s ease-in-out;
 }
 .landing-form-rocket {
   position: absolute;
@@ -150,6 +168,7 @@ html {
 }
 
 .form {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,27 +333,38 @@ html {
   color: #3e3f5e;
 }
 
-.login:checked ~ .landing-form {
-  display: block;
+.login:checked ~ .landing-wrapper .login-form {
+  opacity: 1;
+  visibility: visible;
 }
 
-.login:checked ~ .create-account {
-  display: none;
+.login:checked ~ .landing-wrapper .create-account {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
 }
 
-.register:checked ~ .landing-form {
-  display: none;
+.register:checked ~ .landing-wrapper .login-form {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
 }
 
-.register:checked ~ .create-account {
-  display: block;
+.register:checked ~ .landing-wrapper .create-account {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-118%);
 }
 
 @media screen and (max-width: 1400px) {
   .landing {
     flex-direction: column;
-    gap: 80px;
     padding-bottom: 100px;
+  }
+  .landing-wrapper {
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-left: 0;
   }
   .landing-info {
     margin-top: 80px;
@@ -360,9 +390,18 @@ html {
   .landing-btn {
     margin-top: 50px;
   }
-  .create-account {
-    border-radius: 12px;
-    padding-bottom: 64px;
+  .login:checked ~ .landing-wrapper .login-form {
+    display: block;
+  }
+  .login:checked ~ .landing-wrapper .create-account {
+    display: none;
+  }
+  .register:checked ~ .landing-wrapper .login-form {
+    display: none;
+  }
+  .register:checked ~ .landing-wrapper .create-account {
+    display: block;
+    transform: translateX(0);
   }
 }
 

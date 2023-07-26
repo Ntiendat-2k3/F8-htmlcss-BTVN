@@ -1,3 +1,5 @@
+
+
 .login:checked ~ .landing-info .landing-btn-login {
      background-color: $primaryColor;
      color: $textColor;
@@ -23,25 +25,22 @@
 // .register:checked ~ .landing-form  {
 //      display: none;
 // }
-.login:checked ~ .landing-form {
-     display: block;
-     // transform: translateX(0);
-     // opacity: 1;
-     // visibility: visible;
+.login:checked ~ .landing-wrapper .login-form {
+     opacity: 1;
+     visibility: visible;
 }
-.login:checked ~ .create-account {
-     display: none;
-     // opacity: 0;
-     // visibility: hidden;
+.login:checked ~ .landing-wrapper .create-account {
+     opacity: 0;
+     visibility: hidden;
+     transform: translateX(100%);
 }
-.register:checked ~ .landing-form {
-     display: none;
-     // opacity: 0;
-     // visibility: hidden;
+.register:checked ~ .landing-wrapper .login-form {
+     opacity: 0;
+     visibility: hidden;
+     transform: translateX(100%);
 }
-.register:checked ~ .create-account {
-     display: block;
-     // transform: translateX(0);
-     // opacity: 1;
-     // visibility: visible;
+.register:checked ~ .landing-wrapper .create-account {
+     opacity: 1;
+     visibility: visible;
+     transform: translateX(-118%);
 }

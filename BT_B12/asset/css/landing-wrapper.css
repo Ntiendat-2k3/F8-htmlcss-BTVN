@@ -1,0 +1,22 @@
+.landing-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-left: 70px;
+  width: 484px;
+  border-radius: 12px;
+}
+.landing-wrapper .landing-form {
+  width: 100%;
+  flex: 1 0 100%;
+  border-radius: 12px;
+  padding: 64px;
+}
+.landing-wrapper .login-form {
+  height: 674px;
+}
+.landing-wrapper .create-account {
+  height: 820px;
+}
+
+/*# sourceMappingURL=landing-wrapper.css.map */

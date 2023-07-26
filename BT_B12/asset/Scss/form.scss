@@ -3,6 +3,7 @@
      margin-top: 28px;
 }
 .form {
+     width: 100%;
      @include centerContainer($direction: column);
      &-title {
           @include text($font-size: 2.6rem);

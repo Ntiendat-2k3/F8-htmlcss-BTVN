@@ -45,125 +45,40 @@
                     </div>
                </div>
 
-               <!-- Login -->
-               <div class="landing-form">
-                    <div class="landing-form-rocket">
-                         <img src="./asset/images/rocket.png" alt="rocket" />
-                    </div>
-                    <!-- form -->
-                    <form action="" class="form">
-                         <h2 class="form-title">Account Login</h2>
-                         <!-- Username , Email-->
-                         <div class="form-input">
-                              <input type="text" id="login-username" name="username" autofocus required />
-                              <label for="login-username">Username or Email</label>
-                         </div>
-                         <!-- Password -->
-                         <div class="form-input mt-44">
-                              <input type="password" id="login-password" name="password" required />
-                              <label for="login-password">Password</label>
-                         </div>
-                         <div class="form-row">
-                              <!-- remember me -->
-                              <div class="form-row-checkbox">
-                                   <input
-                                        type="checkbox"
-                                        id="login-remember"
-                                        name="login_remember"
-                                        hidden />
-                                   <div class="checked-box">
-                                        <img
-                                             src="./asset/images/close.svg"
-                                             alt="img"
-                                             class="checked-box-img" />
-                                   </div>
-                                   <label for="login-remember">Remember Me</label>
-                              </div>
-                              <!-- Forgot password -->
-                              <a class="form-row-link" href="#!">Forgot Password?</a>
-                         </div>
-                         <!-- login btn -->
-                         <button type="submit" class="form-submit">Login to your Account!</button>
-                    </form>
-                    <!-- Social text -->
-                    <p class="landing-form-text">Login with your Social Account</p>
-                    <!-- Socials -->
-                    <div class="landing-form-socials">
-                         <a href="#!" class="social-link" style="--clr: #3763d2">
-                              <img
-                                   src="./asset/images/fb.svg"
-                                   alt="facebook"
-                                   class="social-link-img" />
-                         </a>
-                         <a href="#!" class="social-link" style="--clr: #1abcff">
-                              <img
-                                   src="./asset/images/twitter.svg"
-                                   alt="twitter"
-                                   class="social-link-img" />
-                         </a>
-                         <a href="#!" class="social-link" style="--clr: #7b5dfa">
-                              <img
-                                   src="./asset/images/mess.svg"
-                                   alt="message"
-                                   class="social-link-img" />
-                         </a>
-                         <a href="#!" class="social-link" style="--clr: #fd434f">
-                              <img
-                                   src="./asset/images/ytb.svg"
-                                   alt="youtube"
-                                   class="social-link-img" />
-                         </a>
-                    </div>
-               </div>
-
-               <!-- Create account -->
-               <div class="landing-form create-account">
-                    <form action="" class="form">
+               <div class="landing-wrapper">
+                    <!-- Login -->
+                    <div class="landing-form login-form">
                          <div class="landing-form-rocket">
                               <img src="./asset/images/rocket.png" alt="rocket" />
                          </div>
                          <!-- form -->
                          <form action="" class="form">
-                              <h2 class="form-title">Create your Account!</h2>
-                              <!-- Email-->
+                              <h2 class="form-title">Account Login</h2>
+                              <!-- Username , Email-->
                               <div class="form-input">
-                                   <input type="text" id="resgister-email" name="email" autofocus required />
-                                   <label for="resgister-email">Your Email</label>
-                              </div>
-                              <!-- Username -->
-                              <div class="form-input mt-44">
                                    <input
                                         type="text"
-                                        id="resgister-username"
+                                        id="login-username"
                                         name="username"
+                                        autofocus
                                         required />
-                                   <label for="resgister-username">Username</label>
+                                   <label for="login-username">Username or Email</label>
                               </div>
                               <!-- Password -->
                               <div class="form-input mt-44">
                                    <input
                                         type="password"
-                                        id="resgister-password"
+                                        id="login-password"
                                         name="password"
                                         required />
-                                   <label for="resgister-password">Password</label>
+                                   <label for="login-password">Password</label>
                               </div>
-                              <!-- Repeat-Password -->
-                              <div class="form-input mt-44">
-                                   <input
-                                        type="password"
-                                        id="resgister-repeat-password"
-                                        name="password"
-                                        required />
-                                   <label for="resgister-repeat-password">Repeat Password</label>
-                              </div>
-
                               <div class="form-row">
                                    <!-- remember me -->
                                    <div class="form-row-checkbox">
                                         <input
                                              type="checkbox"
-                                             id="register-remember"
+                                             id="login-remember"
                                              name="login_remember"
                                              hidden />
                                         <div class="checked-box">
@@ -172,20 +87,124 @@
                                                   alt="img"
                                                   class="checked-box-img" />
                                         </div>
-                                        <label for="register-remember">
-                                             Send me news and updates via email
-                                        </label>
+                                        <label for="login-remember">Remember Me</label>
                                    </div>
+                                   <!-- Forgot password -->
+                                   <a class="form-row-link" href="#!">Forgot Password?</a>
                               </div>
                               <!-- login btn -->
-                              <button type="submit" class="form-submit">Register Now!</button>
-                              <p class="form-desc">
-                                   You'll receive a confirmation email in your inbox with a link to
-                                   activate your account. If you have any problems,
-                                   <a href="#!">contact us</a>!
-                              </p>
+                              <button type="submit" class="form-submit">
+                                   Login to your Account!
+                              </button>
                          </form>
-                    </form>
+                         <!-- Social text -->
+                         <p class="landing-form-text">Login with your Social Account</p>
+                         <!-- Socials -->
+                         <div class="landing-form-socials">
+                              <a href="#!" class="social-link" style="--clr: #3763d2">
+                                   <img
+                                        src="./asset/images/fb.svg"
+                                        alt="facebook"
+                                        class="social-link-img" />
+                              </a>
+                              <a href="#!" class="social-link" style="--clr: #1abcff">
+                                   <img
+                                        src="./asset/images/twitter.svg"
+                                        alt="twitter"
+                                        class="social-link-img" />
+                              </a>
+                              <a href="#!" class="social-link" style="--clr: #7b5dfa">
+                                   <img
+                                        src="./asset/images/mess.svg"
+                                        alt="message"
+                                        class="social-link-img" />
+                              </a>
+                              <a href="#!" class="social-link" style="--clr: #fd434f">
+                                   <img
+                                        src="./asset/images/ytb.svg"
+                                        alt="youtube"
+                                        class="social-link-img" />
+                              </a>
+                         </div>
+                    </div>
+
+                    <!-- Create account -->
+                    <div class="landing-form create-account">
+                         <form action="" class="form">
+                              <div class="landing-form-rocket">
+                                   <img src="./asset/images/rocket.png" alt="rocket" />
+                              </div>
+                              <!-- form -->
+                              <form action="" class="form">
+                                   <h2 class="form-title">Create your Account!</h2>
+                                   <!-- Email-->
+                                   <div class="form-input">
+                                        <input
+                                             type="text"
+                                             id="resgister-email"
+                                             name="email"
+                                             autofocus
+                                             required />
+                                        <label for="resgister-email">Your Email</label>
+                                   </div>
+                                   <!-- Username -->
+                                   <div class="form-input mt-44">
+                                        <input
+                                             type="text"
+                                             id="resgister-username"
+                                             name="username"
+                                             required />
+                                        <label for="resgister-username">Username</label>
+                                   </div>
+                                   <!-- Password -->
+                                   <div class="form-input mt-44">
+                                        <input
+                                             type="password"
+                                             id="resgister-password"
+                                             name="password"
+                                             required />
+                                        <label for="resgister-password">Password</label>
+                                   </div>
+                                   <!-- Repeat-Password -->
+                                   <div class="form-input mt-44">
+                                        <input
+                                             type="password"
+                                             id="resgister-repeat-password"
+                                             name="password"
+                                             required />
+                                        <label for="resgister-repeat-password"
+                                             >Repeat Password</label
+                                        >
+                                   </div>
+                                   <div class="form-row">
+                                        <!-- remember me -->
+                                        <div class="form-row-checkbox">
+                                             <input
+                                                  type="checkbox"
+                                                  id="register-remember"
+                                                  name="login_remember"
+                                                  hidden />
+                                             <div class="checked-box">
+                                                  <img
+                                                       src="./asset/images/close.svg"
+                                                       alt="img"
+                                                       class="checked-box-img" />
+                                             </div>
+                                             <label for="register-remember">
+                                                  Send me news and updates via email
+                                             </label>
+                                        </div>
+                                   </div>
+                                   <!-- login btn -->
+                                   <button type="submit" class="form-submit">Register Now!</button>
+                                   <p class="form-desc">
+                                        You'll receive a confirmation email in your inbox with a
+                                        link to activate your account. If you have any problems,
+                                        <a href="#!">contact us</a>!
+                                   </p>
+                              </form>
+                         </form>
+                    </div>
                </div>
           </div>
      </body>

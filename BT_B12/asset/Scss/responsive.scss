@@ -1,8 +1,12 @@
 @media screen and (max-width: 1400px) {
      .landing {
           flex-direction: column;
-          gap: 80px;
           padding-bottom: 100px;
+          &-wrapper {
+               align-items: flex-start;
+               margin-top: 80px;
+               margin-left: 0;
+          }
           &-info {
                margin-top: 80px;
                &-desc {
@@ -28,8 +32,17 @@
                margin-top: 50px;
           }
      }
-     .create-account {
-          border-radius: 12px;
-          padding-bottom: 64px;
+     .login:checked ~ .landing-wrapper .login-form {
+          display: block;
+     }
+     .login:checked ~ .landing-wrapper .create-account {
+          display: none;
+     }
+     .register:checked ~ .landing-wrapper .login-form {
+          display: none;
+     }
+     .register:checked ~ .landing-wrapper .create-account {
+          display: block;
+          transform: translateX(0);
      }
 }

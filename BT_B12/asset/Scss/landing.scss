@@ -1,7 +1,7 @@
 .landing {
+     @include centerContainer;
      background-image: url("../images/landing-background.jpg");
      background-size: cover;
-     @include centerContainer;
      min-height: 100vh;
      position: relative;
      overflow: hidden;
