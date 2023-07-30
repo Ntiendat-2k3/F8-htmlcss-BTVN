@@ -1169,6 +1169,11 @@ img {
   color: #2c2c2c;
 }
 
+@media screen and (max-width: 991.98px) {
+  .feature {
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 575.98px) {
   .feature {
     margin-top: 50px;
@@ -1189,7 +1194,8 @@ img {
   gap: 118.33px;
 }
 .contact-wrapper .contact-thumb {
-  flex-shrink: 0;
+  width: 485.833px;
+  height: 498.333px;
 }
 .contact-wrapper .contact-thumb img {
   width: 100%;
