@@ -1,0 +1,42 @@
+.container {
+     --container-width: 1200px;
+}
+.justify-content-start {
+     justify-content: flex-start;
+}
+
+.justify-content-center {
+     justify-content: center;
+}
+
+.justify-content-end {
+     justify-content: flex-end;
+}
+
+.align-items-start {
+     align-items: flex-start;
+}
+
+.align-items-center {
+     align-items: center;
+}
+
+.align-items-end {
+     align-items: flex-end;
+}
+.title, .desc {
+     margin: 0 auto;
+}
+.title {
+     display: block;
+     text-align: center;
+     color: $textColor;
+     font-size: 3.1667rem;
+     font-weight: 800;
+}
+.desc {
+     font-size: 1.6rem;
+     color: $textColor;
+     font-weight: 400;
+     text-align: center;
+}

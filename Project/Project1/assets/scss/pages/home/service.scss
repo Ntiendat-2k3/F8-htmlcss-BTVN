@@ -1,0 +1,87 @@
+.service {
+     margin-top: 140px;
+}
+.service-list {
+     margin: 0 auto;
+     margin-top: 115px;
+     display: grid;
+     grid-template-columns: 1fr 1.18fr 1fr;
+     gap: 22px;
+     align-items: center;
+     position: relative;
+     z-index: -1;
+     .service-item {
+          box-shadow: -5.8333330154418945px 8.333333015441895px 72.5px 0px rgba(54, 54, 54, 0.12);
+          padding: 33.33px 0 59px 33.33px;
+          display: flex;
+          flex-direction: column;
+          gap: 23.33px;
+          height: 338px;
+          background-color: #fff;
+          .service-thumb {
+               width: 83px;
+               height: 83px;
+               border-radius: 10px;
+               background-color: #fff0e7;
+               img {
+                    @include editImg;
+                    font-size: 4.5rem;
+                    padding: 20px;
+                    flex-shrink: 0;
+               }
+          }
+          .service-quality {
+               @include editText(4.33rem, 800);
+          }
+          .service-item-desc {
+               @include editText(2rem);
+               line-height: 1.55;
+          }
+          &-scale {
+               height: 393px;
+               padding-top: 60.83px;
+               .service-thumb {
+                    background-color: #f2ffec;
+               }
+          }
+     }
+     &::before,
+     &::after {
+          content: "";
+          position: absolute;
+          width: 235px;
+          height: 235px;
+          border-radius: 50%;
+          z-index: -1;
+     }
+     &::before {
+          top: -24%;
+          left: -10%;
+          background-color: #dcffca;
+     }
+     &::after {
+          bottom: -28%;
+          right: -10%;
+          background-color: #ffd5bd;
+     }
+}
+@media screen and (max-width: 991.98px) {
+     .service-list {
+          &::before {
+               left: 15%;
+          }
+          &::after {
+               right: 15%;
+          }
+     }
+}
+@media screen and (max-width: 575.98px) {
+     .service-list {
+          margin-top: 60px;
+          grid-template-columns: 1fr;
+          &::before,
+          &::after {
+               display: none;
+          }
+     }
+}

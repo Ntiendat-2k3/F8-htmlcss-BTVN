@@ -1,0 +1,92 @@
+.products {
+     margin-top: 140px;
+     .products-wrapper {
+          margin: 0 auto;
+     }
+}
+.products-list {
+     margin-top: 50px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 83.33px;
+     .product-item {
+          text-align: center;
+          .product-item-bg {
+               width: 269.316px;
+               height: 269.316px;
+               border-radius: 50%;
+               background-color: var(--clr);
+               position: relative;
+               z-index: -1;
+               img {
+                    position: absolute;
+                    bottom: -26%;
+                    left: -3px;
+               }
+          }
+          &.active,
+          &:hover {
+               .product-title {
+                    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+               }
+          }
+          .product-title {
+               display: block;
+               margin-top: 103px;
+               @include editText(2.33rem, 700);
+               padding-bottom: 16px;
+               margin-bottom: 22px;
+               position: relative;
+               &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 40.833px;
+                    height: 2px;
+                    border-radius: 20px;
+                    background-color: #a3a3a3;
+               }
+          }
+          .product-price,
+          .product-quality {
+               @include editText(1.67rem, 400, #656565);
+          }
+          .product-price {
+               margin-top: 6.33px;
+               span {
+                    @include editText(2.33rem, 600);
+               }
+          }
+          .product-btn {
+               margin-top: 31px;
+               display: inline-block;
+               padding: 13.333px 11.667px;
+               border-radius: 6.667px;
+               background-color: $primaryColor;
+               @include editText(1.67rem, 700, #fff);
+               &:hover {
+                    cursor: pointer;
+                    opacity: 0.9;
+               }
+          }
+     }
+}
+@media screen and (max-width: 991.98px) {
+     .products-list {
+          margin: 0 auto;
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+@media screen and (max-width: 575.98px) {
+     .products-list {
+          margin: 0 auto;
+          grid-template-columns: 1fr;
+          .product-item {
+               display: flex;
+               align-items: center;
+               gap: 20px;
+          }
+     }
+}

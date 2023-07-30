@@ -1,0 +1,20 @@
+@import "./parts/variables";
+@import "./parts/fonts";
+@import "./parts/reset";
+@import "./layout/grid.scss";
+@import "./parts/mixins";
+@import "./parts/base";
+
+// layout 
+@import "./layout/header";
+@import "./layout/footer";
+
+// Pages 
+// 1.Home 
+@import "./pages/home/hero.scss";
+@import "./pages/home/service.scss";
+@import "./pages/home/products.scss";
+@import "./pages/home/news.scss";
+@import "./pages/home/info.scss";
+@import "./pages/home/feature.scss";
+@import "./pages/home/contact.scss";

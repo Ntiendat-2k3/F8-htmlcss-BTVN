@@ -1,0 +1,39 @@
+.feature {
+     margin-top: 140px;
+}
+.feature-wrapper {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     column-gap: 52.5px;
+     row-gap: 38.83px;
+     margin: 0 auto;
+     .feature-item {
+          display: flex;
+          gap: 15.83px;
+          .feature-thumb {
+               width: 55.833px;
+               height: 55.833px;
+               flex-shrink: 0;
+               img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+               }
+          }
+          .feature-title {
+               @include editText(2rem, 600);
+          }
+          .feature-desc {
+               margin-top: 7px;
+               @include editText(1.7rem, 500);
+          }
+     }
+}
+@media screen and (max-width: 575.98px) {
+     .feature {
+          margin-top: 50px;
+     }
+     .feature-wrapper {
+          grid-template-columns: 1fr;
+     }
+}

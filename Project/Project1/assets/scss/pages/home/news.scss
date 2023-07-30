@@ -1,0 +1,73 @@
+.news {
+     margin-top: 140px;
+     .title {
+          margin-bottom: 23px;
+     }
+     .news-list {
+          margin-top: 29px;
+          gap: 23.33px;
+          display: flex;
+          .news-item {
+               padding: 0;
+               border-radius: 6.667px;
+               .news-thumb {
+                    width: 100%;
+                    img {
+                         display: block;
+                         @include editImg;
+                    }
+               }
+               .news-time {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 16.27px;
+                    .text {
+                         @include editText(1.5rem, 500, $primaryColor);
+                    }
+                    .time {
+                         display: flex;
+                         align-items: center;
+                         gap: 8px;
+                         @include editText(1.5rem, 500, #a3a3a3);
+                         img {
+                              width: 16.667px;
+                              height: 16.667px;
+                         }
+                    }
+               }
+               .news-title {
+                    margin-top: 19px;
+                    @include editText(2rem, 600);
+               }
+               .news-desc {
+                    margin-top: 16px;
+                    @include editText(1.6rem, 400);
+               }
+          }
+     }
+     .news-btn {
+          margin: 0 auto;
+          margin-top: 80px;
+          border: 1px solid $primaryColor;
+          display: flex;
+          align-items: center;
+          @include editText(1.67rem, 700);
+          padding: 11.667px 21.667px;
+          gap: 5px;
+          border-radius: 6.667px;
+          transition: 0.25s linear;
+          i {
+               font-size: 1.4rem;
+          }
+          &:hover {
+               background-color: $primaryColor;
+               color: #fff;
+          }
+     }
+}
+@media screen and (max-width: 575.98px) {
+     .news-list {
+          flex-direction: column;
+     }
+}
